@@ -379,7 +379,7 @@ function theme.connect(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             s.taglist,
-	    s.layoutbox,
+	    s.promptbox,
         },
         s.tasklist, -- Middle widget
         { -- Right widgets
