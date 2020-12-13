@@ -363,6 +363,8 @@ function theme.connect(s)
 
     awful.tag(awful.util.tagnames, s, awful.layout.layouts[1])
 
+    s.promptbox = awful.widget.prompt()
+
     s.layoutbox = awful.widget.layoutbox(s)
 
     s.taglist = awful.widget.taglist(s, awful.widget.taglist.filter.all, awful.util.taglist_buttons)
@@ -377,6 +379,7 @@ function theme.connect(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             s.taglist,
+	    s.layoutbox,
         },
         s.tasklist, -- Middle widget
         { -- Right widgets
