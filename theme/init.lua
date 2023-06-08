@@ -3,12 +3,13 @@ local lain  = require("lain")
 local awful = require("awful")
 local wibox = require("wibox")
 local os, math, string = os, math, string
+math.randomseed(os.time())
 
 local theme                                     = {}
 
 -- Theme globals
 theme.dir = os.getenv("HOME") .. "/.config/awesome/theme"
-theme.wallpaper = theme.dir .. "/wallpapers/wallpaper.jpg"
+theme.wallpaper = theme.dir .. "/wallpapers/wallpaper" .. math.random(1, 4) .. ".jpg"
 theme.font = "Hack 10"
 -- global colors
 theme.light_grey                                = "#ebdbb2"
