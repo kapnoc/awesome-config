@@ -9,7 +9,7 @@ local theme                                     = {}
 
 -- Theme globals
 theme.dir = os.getenv("HOME") .. "/.config/awesome/theme"
-theme.wallpaper = theme.dir .. "/wallpapers/wallpaper" .. math.random(1, 4) .. ".jpg"
+theme.wallpaper = theme.dir .. "/wallpapers/wallpaper" .. math.random(1, 5) .. ".jpg"
 theme.font = "Hack 10"
 -- global colors
 theme.light_grey                                = "#ebdbb2"
